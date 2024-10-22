@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* Light grey for subtle contrast */
+    color: #333;
+}
+
+header {
+    background-color: #003366; /* Deep navy for professionalism */
+    color: white;
+    padding: 60px 20px; /* Increased padding for better spacing */
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    position: relative; /* For positioning */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em; /* Larger font size */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Subtle text shadow */
+}
+
+header p {
+    font-size: 1.4em; /* Slightly larger subtitle */
+}
+
+.nav-links {
+    margin-top: 20px; /* Space between subtitle and navigation */
+}
+
+.nav-links a {
+    color: white;
+    margin: 0 15px; /* Space between links */
+    text-decoration: none;
+    font-weight: 700; /* Bold text for links */
+    transition: color 0.3s; /* Smooth color change on hover */
+    padding: 5px 10px; /* Padding for clickable area */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.nav-links a:hover {
+    color: #ffc107; /* Gold color on hover for emphasis */
+    background-color: rgba(255, 255, 255, 0.1); /* Light background on hover */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: calc(100vh - 150px); /* Ensures footer is always at the bottom */
+}
+
+.welcome-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.welcome-section h2 {
+    font-size: 2.5em; /* Enhanced subtitle size */
+    margin-bottom: 15px;
+    color: #0056b3; /* Highlight color for headings */
+}
+
+.welcome-section p {
+    font-size: 1.1em;
+    max-width: 600px; /* Limit width for readability */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Increased gap for better spacing */
+    flex-wrap: wrap; /* Ensure buttons stack on smaller screens */
+}
+
+.btn {
+    background-color: #007bff; /* Blue background for buttons */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 8px; /* More rounded corners */
+    font-size: 1.1em; /* Consistent button text size */
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    font-weight: 700; /* Bold button text */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover */
+}
+
+.btn:active {
+    transform: translateY(1px);
+}
+
+.info-section {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.info-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #003366; /* Dark color for contrast */
+}
+
+.info-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Stack cards on smaller screens */
+    margin-top: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px; /* Fixed width for cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Shadow on hover */
+}
+
+.card-icon {
+    font-size: 3em; /* Larger icon size */
+    color: #0056b3; /* Consistent color with headings */
+    margin-bottom: 15px; /* Space between icon and text */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #003366; /* Consistent footer color */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+.container {
+    max-width: 1200px; /* Max width for better alignment */
+    margin: 0 auto; /* Centering the content */
+}
